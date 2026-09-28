@@ -18,15 +18,15 @@ the_box = {
 }
 
 #Create a variable pointing to the data file
-file_name = 'data/raw/MoveBank/Satellite tracking of black-capped petrels 2019-argos.csv
+file_name = 'data/raw/MoveBank/Satellite tracking of black-capped petrels 2019-argos.csv'
 
 #Read the contents of the file into a list of lines
 with open(file_name,'r') as f:
     #Read contents of file into a list
-	line_list = f.█
+	line_list = f.readlines()
 
 #Pretend we read one line of data from the file
-lineString = line_list[█]
+lineString = line_list[1]
 
 # Use the split command to parse the items in lineString into a list object
 line_data = lineString.split(',')
