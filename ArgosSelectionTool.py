@@ -29,7 +29,7 @@ timestamp = line_data[2]  # Observation date ("timestamp")
 lat = line_data[3]        # Observation latitude  ("location-lat")
 lon = line_data[4]        # Observation longitude ("location-lon")
 lc  = line_data[13]        # Observation location class ("argos:lc")
-tag_id = line_data[34]     # Tag identifier ("tag-local-identifier")
+tag_id = line_data[-3]     # Tag identifier ("tag-local-identifier")
   
 # Print information to the use
 print (f"Record {event_id} indicates {tag_id} was seen at {lat}N and {lon}W on {timestamp}")
