@@ -26,7 +26,7 @@ with open(file_name,'r') as f:
 	line_list = f.readlines()
 
 #Pretend we read one line of data from the file
-lineString = line_list[1]
+lineString = line_list[250]
 
 # Use the split command to parse the items in lineString into a list object
 line_data = lineString.split(',')
